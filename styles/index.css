@@ -1,0 +1,146 @@
+/*------------------------------------------------------- BODY SECTION ----------------------------------------------*/
+
+body, html {
+    background-color: black;
+    padding-top: 0;
+    height: 100%;
+    margin: 0;
+    font-family: "Inter Tight", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* HOME DIVISION */
+.home-background {
+    background-image: url('../images/home_bg.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-family: "Inter Tight", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+}
+
+.home-background h1{
+    font-size: 50px;
+    font-weight: bold;
+}
+.home-background h1,
+.home-background p {
+    text-shadow: -1px -1px 0 #161515, 1px -1px 0 #161515, -1px 1px 0 #161515, 1px 1px 0 #161515;
+}
+
+.explore-button {
+    background-color: rgb(11, 22, 33);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.explore-button:hover{
+    background-color: darkcyan;
+    color: rgb(11, 22, 33);
+    text-decoration: none;
+}
+.explore-button:active{
+    background-color: rgb(70, 80, 90);
+    color: white;
+    text-decoration: none;
+}
+
+
+/* ABOUT-US DIVISION */
+.company-description {
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 500;
+    margin-top: 20px;
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: white;
+}
+
+.about {
+    background-color: rgb(11, 23, 33);
+    color: white;
+    text-decoration: none;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 40px;
+    color: rgb(2, 142, 142);
+    margin-bottom: 20px;
+    border-bottom: solid;
+    width: max-content;
+    margin: auto;
+}
+
+.about h3 {
+    color: rgb(2, 142, 142);
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.column_one,
+.column_two,
+.column_three {
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+.column_one p,
+.column_two p,
+.column_three p {
+    font-size: 16px;
+    line-height: 22px;
+}
+
+/* MEDIA QUERIES*/
+
+@media (max-width: 1200px) {
+    .column_one,
+    .column_two,
+    .column_three {
+        width: 45%;
+    }
+
+    .details {
+        width: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    .column_one,
+    .column_two,
+    .column_three{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .about {
+        padding: 40px 10px;
+    }
+
+    .about h2 {
+        font-size: 32px;
+    }
+}

@@ -1,0 +1,73 @@
+body, html {
+    background-color: black;
+    padding-top: 0;
+    height: 100%;
+    margin: 0;
+    font-family: "Inter Tight", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/*------------------------------------------------------ CUSTOMERS -------------------------------------------*/
+.your-info-card{
+    margin-top: 70px;
+}
+.user-card h3{
+    font-size: 18px;
+    padding: 12px;
+    font-weight: bold;
+    font-family: "Inter Tight", sans-serif;
+}
+
+.user-card-items{
+    padding: 20px;
+}
+.user-card{
+    font-family: "Inter Tight", sans-serif;
+    width: 100%;
+    background-color: rgb(11, 22, 33);
+    box-sizing: border-box;
+    color: whitesmoke;
+}
+
+.index-customer-card{
+    margin-top: 70px;
+}
+
+
+td, th{
+    color: whitesmoke;
+}
+
+td{font: weight 30px;;}
+.customer-card{
+    font-family: "Inter Tight", sans-serif;
+    width: 100%;
+    background-color: rgb(22, 33, 44);
+    padding: 20px; 
+    box-sizing: border-box;
+}
+
+.table-attribute {
+    background-color: darkcyan;
+    color: white;
+}
+
+.table-attribute .attribute {
+    color: white;
+    font-weight: bold;
+    padding-left: 50px;
+}
+
+tbody{
+    background-color: rgb(11, 22, 33);
+}
+
+#customerTableBody tr td{
+    padding-left: 50px;
+}
+.table-rows{
+    color: whitesmoke;
+}
+
+

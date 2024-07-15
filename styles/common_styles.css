@@ -1,0 +1,235 @@
+/*------------------------------------------------- HEADER SECTION ---------------------------------------------*/
+/*------------------------------------------------------- HEADER -------------------------------------------------------*/
+.header {
+    font-family: "Inter Tight", sans-serif;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(11, 22, 33);
+    z-index: 100;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    box-sizing: border-box;
+}
+
+/* HEADER LEFT SECTION */
+.left-section {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.bank-name{
+    color: white;
+}
+
+.left-section h2{
+    color: white;
+    font-size: 25px;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+/*HEADER MIDDLE SECTION */
+
+/* HEADER MIDDLE SECTION */
+.middle-section {
+    margin-left: 30px;
+    flex: 1;
+    margin-right: 30px;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.search-box::placeholder {
+    font-size: 20px;
+    font-weight: bold;
+    color: darkcyan;
+}
+
+.search-box {
+    height: 40px;
+    flex: 1;
+    padding-left: 30px;
+    padding-right: 60px;
+    margin-right: 10px;
+    color: whitesmoke;
+    font-size: 16px;
+    border-width: 0;
+    border-radius: 30px;
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+    background-color: rgba(202, 229, 252, 0.1);
+}
+
+.search-button{
+    cursor: pointer;
+    width: 42px;
+    height: 42px;
+    background-color: darkcyan;
+    border-style: solid;
+    border-width: 0;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.search-button:hover{
+    background-color: rgb(20, 110, 110);
+}
+
+.search-button:active{
+    background-color: rgb(12, 182, 182);
+}
+
+/* HEADER RIGHT SECTION */
+.right-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.right-section .header-link {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease; 
+}
+
+.right-section .header-link:hover {
+    color:darkcyan;
+}
+
+.right-section .header-link:active {
+    color:  rgb(70, 80, 90);
+}
+/* MEDIA QUERIES */
+
+/* FOR TABLETS (768px to 991px) */
+@media only screen and (max-width: 991px) {
+    .header {
+        height: 60px; 
+    }
+
+    .left-section {
+        margin-left: 4px; 
+    }
+    .right-section {
+        margin-right: 10px; 
+    }
+}
+
+/* FOR PHONES (up to 767px) */
+@media only screen and (max-width: 767px) {
+    .right-section {
+        margin-right: 14px; 
+    }
+    .right-section .header-link
+    {
+        margin-right: 16px;
+    }
+}
+
+
+
+
+/*------------------------------------------------------ FOOTER SECTION -------------------------------------------*/
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    clear: both;
+}
+
+.footer-company-links {
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer-company-links a.top {
+    display: block;
+    margin: 10px auto;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.footer-company-links a.top:hover {
+    color: rgb(0, 190, 190);
+    font-weight: bold;
+}
+
+.footer-company-links a.top:active{
+    color: rgb(1, 104, 104);
+    font-weight: bold;
+}
+
+.footer-company-links .icons {
+    margin: 20px 0;
+}
+
+.footer-company-links .icons i {
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.footer-company-links .icons i:hover{
+    color: rgb(0, 190, 190);
+    transform: scale(1.2);
+}
+
+.footer-company-links .icons i:active{
+    color: rgb(1, 104, 104);
+    font-weight: bold;
+}
+.footer-links {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.footer-link {
+    display: flex;
+    gap: 40px;
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.footer-link:hover {
+    color: rgb(205, 195, 195);
+}
+
+.footer-link:active {
+    color: grey;
+}
+
+.footer p {
+    margin-top: 20px;
+    font-size: 14px;
+}
